@@ -1,6 +1,6 @@
 .spot-banner {
   background: url("https://www.playspots.in/wp-content/uploads/2018/10/partnerwithusBg.jpg");
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -79,7 +79,7 @@ select.partnership-field {
     rgba(81, 176, 68, 1) 57%,
     rgba(136, 194, 65, 1) 100%
   );
-  background: -webkit-linear-gradient(
+  background: -webkit-gradient(
     left top,
     right top,
     color-stop(0%, rgba(8, 151, 73, 1)),
@@ -131,7 +131,7 @@ select.partnership-field {
     rgba(6, 149, 68, 1) 75%,
     rgba(6, 149, 68, 1) 100%
   ) !important;
-  background: -webkit-linear-gradient(
+  background: -webkit-gradient(
     left top,
     right top,
     color-stop(0%, rgba(133, 195, 62, 1)),
@@ -168,11 +168,11 @@ select.partnership-field {
   transition: all 0.3s !important;
 }
 
-.features .row {
+.featutres .row {
   margin-left: -30px;
   margin-right: -30px;
 }
-.features [class*="col-"] {
+.featutres [class*="col-"] {
   padding: 0 30px;
 }
 .feature-box {
