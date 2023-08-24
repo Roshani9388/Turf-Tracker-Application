@@ -1,6 +1,11 @@
-import React from "react";
 
+import React from "react";
+import roshani from "../images/roshani.jpg";
 import Arjun from "../images/Arjun.jpg";
+import bhushan from "../images/bhushan.jpg";
+import pratik from "../images/pratik.jpg";
+
+
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -30,19 +35,61 @@ const AboutUs = () => {
                 ></li>
               </ol>
 
-
+              <div className="col-md-4">
+                <div className="single-box">
+                  <div className="img-area">
+                    <img src={roshani} alt="roshani" />
+                  </div>
+                  <div className="img-text">
+                    <h2>Roshani Bhadane</h2>
+                    <p>
+                      Hi, I am Roshani Bhadane. I am currently pursuing PG-DAC
+                      from IET, Pune.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
               <div className="col-md-4">
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={Arjun} alt="anand" />
+                    <img src={Arjun} alt="Arjun" />
                   </div>
                   <div className="img-text">
-                    <h2>Bhandwalkar Arjun Ganeshrao</h2>
+                    <h2>Arjun Bhandwalkar</h2>
                     <p>
-                      Hi, I am Arjun. I am currently pursuing Post Graduate
-                      Diploma from IET,Pune and my role in the project
-                      is backend as well as frontend developer.
+                      Hi, I am Arjun Bhandwalkar. I am currently pursuing 
+                      PG-DAC from IET, Pune.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-4">
+                <div className="single-box">
+                  <div className="img-area">
+                    <img src={bhushan} alt="bhushan" />
+                  </div>
+                  <div className="img-text">
+                    <h2>Bhushan More</h2>
+                    <p>
+                      Hi, I am Bhushan More. I am currently pursuing 
+                      PG-DAC from IET, Pune.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-4">
+                <div className="single-box">
+                  <div className="img-area">
+                    <img src={pratik} alt="pratik" />
+                  </div>
+                  <div className="img-text">
+                    <h2>Pratik Thorat</h2>
+                    <p>
+                      Hi I am Pratik Thorat. I am currently pursuing 
+                      PG-DAC from IET, Pune.
                     </p>
                   </div>
                 </div>
