@@ -54,7 +54,7 @@ function Login() {
                   </h5>
                   <form>
                     <div class="mb-4">
-                      {/* <label>Email address</label> */}
+                       <label>Email address</label> 
 
                       <input
                         type="email"
@@ -67,7 +67,7 @@ function Login() {
                       />
                     </div>
                     <div class="mb-4">
-                      {/* <label>Password</label> */}
+                       <label>Password</label> 
 
                       <input
                         type="password"
