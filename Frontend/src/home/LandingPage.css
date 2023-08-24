@@ -11,7 +11,7 @@
 }
 .app-features-section .feature-wrap h4 {
   margin: 15px 0;
-  color: #060b1e;
+  color: #061e0b;
 }
 .app-features-section .feature-wrap .content {
   color: #060b1e;
@@ -87,14 +87,18 @@
   -webkit-backgroundclip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
 .home-banner .banner-btns .btn {
-  padding: 8px;
+  /* padding: 1px 108px 1px 1px; */
+  padding: 10px 20px 10px 20px;
   border-radius: 15px;
   text-align: center;
   width: fit-content;
 }
 .home-banner .banner-btns .btn:first-child {
-  margin-right: 80px;
+  margin-right: 50px;
+
 }
 .home-banner .banner-btns .btn.green-btn {
   background: rgba(4, 168, 100, 1);
