@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Home.css";
 
@@ -68,7 +69,7 @@ const Home = () => {
                 />
                 <h6>Financial and transaction report</h6>
                 <p>
-                  Track your sales, utilization and users with ease with easily
+                  Track your sales, utilization and users with easily
                   downloadable tabular data and systemized graphs
                 </p>
               </div>
@@ -116,7 +117,7 @@ const Home = () => {
                 />
                 <h6>Simple and straightforward pricing policy</h6>
                 <p>
-                  We charge zero for the subscription of our software. We may
+                  We charge zero fees for the subscription of our software. We may
                   charge a nominal amount as service charge for the transactions
                   that the users make through our platform.
                 </p>
