@@ -4,7 +4,7 @@ function AdminHome() {
   useEffect(() => {
     if (
       localStorage.getItem("role") === "null" ||
-      localStorage.getItem("role") !== "1"
+      localStorage.getItem("role") != "1"
     ) {
       window.location.href = "/login";
     }
@@ -75,7 +75,7 @@ function AdminHome() {
                 />
                 <h6>Financial and transaction report</h6>
                 <p>
-                  Track your sales, utilization and users with ease with easily
+                  Track your sales, utilization and users with easily
                   downloadable tabular data and systemized graphs
                 </p>
               </div>
@@ -105,7 +105,7 @@ function AdminHome() {
                   data-aos="fade-down"
                   data-aos-duration="500"
                 />
-                <h6>Invoices &amp; billing integration</h6>
+                <h6>Invoices & billing integration</h6>
                 <p>
                   Bring out invoices and authentication receipts with printer
                   integration and multiple page-format support
