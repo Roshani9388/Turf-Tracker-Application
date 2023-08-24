@@ -76,7 +76,7 @@ function Registration() {
 
     let url = "http://localhost:8081/registerUser";
     await axios.post(url, newuser);
-    sweetalert("success", "You have register successfully...", "success");
+    sweetalert("success", "You have registered successfully...", "success");
     window.location.href = "/login";
   };
 
@@ -86,7 +86,7 @@ function Registration() {
     const response = await axios.post("http://localhost:8081/checkEmail", user);
     console.log(response.data);
     if (response.data === null || response.data === "") {
-      //alert("Invalid Credential");
+      alert("Invalid Credential");
       addNewUser();
     } else {
       sweetalert("Error", "Email already used", "error");
@@ -98,7 +98,7 @@ function Registration() {
   };
 
   const redirectreg = () => {
-    window.location.href = "/Reg";
+    window.location.href = "/Register";
   };
 
   return (
