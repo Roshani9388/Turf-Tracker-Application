@@ -19,7 +19,7 @@ const AboutUs = () => {
               class="carousel slide"
               data-ride="carousel"
             >
-              <ol class="carousel-indicators">
+              {/* <ol class="carousel-indicators">
                 <li
                   data-target="#carouselExampleIndicators"
                   data-slide-to="0"
@@ -33,7 +33,7 @@ const AboutUs = () => {
                   data-target="#carouselExampleIndicators"
                   data-slide-to="2"
                 ></li>
-              </ol>
+              </ol> */}
 
               <div className="col-md-4">
                 <div className="single-box">
