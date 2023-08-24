@@ -30,12 +30,12 @@ function Login() {
               <div class="">
                 <div class="p-4 p-sm-5 mt-5 login">
                   <h5 class="card-title text-center mb-5 fw-light fs-5">
-                    Enter your email id which is restister to SportLoc Fare
-                    accounts you will get password on your email
+                    Enter your email id which is registered to Kridangan App
+                    account you will get password on your email
                   </h5>
                   <form>
                     <div class="mb-4">
-                      {/* <label>Email address</label> */}
+                      <label>Email address</label>
 
                       <input
                         type="email"
