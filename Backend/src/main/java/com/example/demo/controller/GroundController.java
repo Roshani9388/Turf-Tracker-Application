@@ -72,13 +72,13 @@ public class GroundController {
 			@RequestParam(name="ground_image") String ground_image,
 
 			final @RequestParam("imageFile") MultipartFile file) throws IOException {
-		String imgdirectory="E:\\New folder\\ZIP\\BackEnd\\LetsPlay\\images";
+		String imgdirectory="C:\\Users\\Administrator\\Desktop\\Project\\Backend\\LetsPlay\\src\\main\\resources\\static\\image\\";
 		GroundsDetails ground=new GroundsDetails();
 		ground.setGround_id(groundid);
 		List<TimeSlots> slots=new ArrayList<>();
-		System.out.println("morning   "+morning );
-		System.out.println("after    "+afternoon);
-		System.out.println("eve  "+evening);
+		System.out.println("morning   "+ morning );
+		System.out.println("after    "+ afternoon);
+		System.out.println("eve  "+ evening);
 		if(morning!=null) {
 			TimeSlots  t =new TimeSlots();
 			t.setGround_id(groundid);
