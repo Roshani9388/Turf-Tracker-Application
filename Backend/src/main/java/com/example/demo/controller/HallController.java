@@ -58,8 +58,8 @@ public class HallController {
 		if(!morning.equals(null)) {
 			TimeSlots  t =new TimeSlots();
 			t.setHallId(hallid);
-			t.setStatus("NotBook");
-			t.setTime_slot("9 Am to 12 Am");
+			t.setStatus("Not Booked");
+			t.setTime_slot("09:00 AM to 12:00 PM");
 			
 			timeRepo.addTimeSlots(t);
 			slots.add(t);
@@ -68,8 +68,8 @@ public class HallController {
 		if(!afternoon.equals(null)) {
 			TimeSlots  t =new TimeSlots();
 			t.setHallId(hallid);
-			t.setStatus("NotBook");
-			t.setTime_slot("12 Pm to 3 Pm");
+			t.setStatus("Not Booked");
+			t.setTime_slot("12:00 PM to 03:00 PM");
 			timeRepo.addTimeSlots(t);
 			slots.add(t);
 
@@ -77,8 +77,8 @@ public class HallController {
 		if(!evening.equals(null)) {
 			TimeSlots  t =new TimeSlots();
 			t.setHallId(hallid);
-			t.setStatus("NotBook");
-			t.setTime_slot("3 Pm to 6 Pm");
+			t.setStatus("Not Booked");
+			t.setTime_slot("03:00 PM to 06:00 PM");
 			timeRepo.addTimeSlots(t);
 		slots.add(t);
 
@@ -161,7 +161,7 @@ public List<HallBooking> getGrounds(@RequestBody GroundsDetails hall){
 public String deleteHalls(@RequestBody String hall_id){
 	
 	hallRepo.deleteById(hall_id);
-	return "Deleted successfull";
+	return "Deleted successfully";
 }
 
 
@@ -187,8 +187,8 @@ HallBooking hall=new HallBooking();
 	if(!morning.equals(null)) {
 		TimeSlots  t =new TimeSlots();
 		t.setHallId(hallid);
-		t.setStatus("NotBook");
-		t.setTime_slot("9 Am to 12 Am");
+		t.setStatus("Not Booked");
+		t.setTime_slot("09:00 AM to 12:00 PM");
 		
 		timeRepo.addTimeSlots(t);
 		slots.add(t);
@@ -197,8 +197,8 @@ HallBooking hall=new HallBooking();
 	if(!afternoon.equals(null)) {
 		TimeSlots  t =new TimeSlots();
 		t.setHallId(hallid);
-		t.setStatus("NotBook");
-		t.setTime_slot("12 Pm to 3 Pm");
+		t.setStatus("Not Booked");
+		t.setTime_slot("12:00 PM to 03:00 PM");
 		timeRepo.addTimeSlots(t);
 		slots.add(t);
 
@@ -206,8 +206,8 @@ HallBooking hall=new HallBooking();
 	if(!evening.equals(null)) {
 		TimeSlots  t =new TimeSlots();
 		t.setHallId(hallid);
-		t.setStatus("NotBook");
-		t.setTime_slot("3 Pm to 6 Pm");
+		t.setStatus("Not Booked");
+		t.setTime_slot("03:00 PM to 06:00 PM");
 		timeRepo.addTimeSlots(t);
 	slots.add(t);
 
