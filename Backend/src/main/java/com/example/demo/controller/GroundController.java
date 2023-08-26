@@ -82,8 +82,8 @@ public class GroundController {
 		if(morning!=null) {
 			TimeSlots  t =new TimeSlots();
 			t.setGround_id(groundid);
-			t.setStatus("NotBook");
-			t.setTime_slot("9 Am to 12 Am");
+			t.setStatus("Not Booked");
+			t.setTime_slot("09:00 AM to 12:00 PM");
 
 			timeRepo.addTimeSlots(t);
 			slots.add(t);
@@ -92,8 +92,8 @@ public class GroundController {
 		if(afternoon!=null) {
 			TimeSlots  t =new TimeSlots();
 			t.setGround_id(groundid);
-			t.setStatus("NotBook");
-			t.setTime_slot("12 Pm to 3 Pm");
+			t.setStatus("Not Booked");
+			t.setTime_slot("12:00 PM to 03:00 PM");
 			timeRepo.addTimeSlots(t);
 			slots.add(t);
 
@@ -101,8 +101,8 @@ public class GroundController {
 		if(evening!=null) {
 			TimeSlots  t =new TimeSlots();
 			t.setGround_id(groundid);
-			t.setStatus("NotBook");
-			t.setTime_slot("3 Pm to 6 Pm");
+			t.setStatus("Not Booked");
+			t.setTime_slot("03:00 PM to 06:00 PM");
 			timeRepo.addTimeSlots(t);
 			slots.add(t);
 
@@ -201,7 +201,7 @@ public class GroundController {
 	public String deleteGrounds(@PathVariable("id") String ground){
 
 		groundRepo.deleteGround(ground);
-		return "Deleted successfull";
+		return "Deleted successfully";
 	}
 
 
