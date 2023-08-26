@@ -68,14 +68,14 @@ public class BookingController {
 			timeSlots = book.getTimeSlots();
 			timeSlots = timeSlotsRepo.findBySlotId(timeSlots.getSlot_id());
 
-			int otp = random.nextInt(999999);
+			int OTP = random.nextInt(999999);
 
 			String subject = "Message from SportLoc";
 			String message = "Your Booking for  " + book.getDate() + " is sucessfull of " + hall.getHallname()
 					+ ", " + hall.getLoction() + " ," + hall.getCity() + " from  " + timeSlots.getTime_slot()
-					+ " and  use this otp on venue entry your otp is= " + otp + " Please do no share with anyone";
+					+ " and  use this OTP on venue entry your OTP is= " + OTP + " Please do no share with anyone";
 			String to = user.getEmail();
-//		otp1.setOtp(otp);
+//		OTP1.setOTP(OTP);
 
 			boolean flag = this.userService.sendEmail(subject, message, to);
 
@@ -85,10 +85,10 @@ public class BookingController {
 			String subject1 = "Message from letsplay";
 			String message1 = "Your have Booking for " + hall.getHallname() + ", " + hall.getLoction() + " ,"
 					+ hall.getCity() + " from " + timeSlots.getTime_slot()
-					+ "  use this otp for customer varification your otp is = " + otp
+					+ "  use this OTP for customer varification your OTP is = " + OTP
 					+ " Please do no share with anyone";
 			String to1 = owner.getEmail();
-//		otp1.setOtp(otp);
+//		OTP1.setOTP(OTP);
 
 			boolean flag1 = this.userService.sendEmail(subject1, message1, to1);
 		} else {
@@ -98,27 +98,27 @@ public class BookingController {
 			timeSlots = book.getTimeSlots();
 			timeSlots = timeSlotsRepo.findBySlotId(timeSlots.getSlot_id());
 
-			int otp = random.nextInt(999999);
+			int OTP = random.nextInt(999999);
 
-			String subject = "Message from SportLoc Fare";
-			String message = "Your Booking for  " + book.getDate() + " is sucessfull of " + ground.getGround_name()
+			String subject = "Message from KRIDANGAN";
+			String message = "Your Booking for  " + book.getDate() + " is sucessful of " + ground.getGround_name()
 					+ ", " + ground.getLoction() + " ," + ground.getCity() + " from  " + timeSlots.getTime_slot()
-					+ " and  use this otp on venue entry your otp is= " + otp + " Please do no share with anyone";
+					+ " and  use this OTP on venue entry your OTP is= " + OTP + " Please do no share with anyone";
 			String to = user.getEmail();
-//		otp1.setOtp(otp);
+//		OTP1.setOTP(OTP);
 
 			boolean flag = this.userService.sendEmail(subject, message, to);
 
 			/////// owner
 			User owner = userRepository.findByUserid(ground.getOwner_id());
 
-			String subject1 = "Message from SportLoc Fare";
+			String subject1 = "Message from KRIDANGAN";
 			String message1 = "Your have Booking for " + ground.getGround_name() + ", " + ground.getLoction() + " ,"
 					+ ground.getCity() + " from " + timeSlots.getTime_slot()
-					+ "  use this otp for customer varification your otp is = " + otp
+					+ "  use this OTP for customer varification your OTP is = " + OTP
 					+ " Please do no share with anyone";
 			String to1 = owner.getEmail();
-//		otp1.setOtp(otp);
+//		OTP1.setOTP(OTP);
 
 			boolean flag1 = this.userService.sendEmail(subject1, message1, to1);
 		}
