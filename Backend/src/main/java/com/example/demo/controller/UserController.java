@@ -73,7 +73,7 @@ public class UserController {
 			String subject = "Message from letsplay";
 			String message="" ;
 			if(user.getStatus().equals("InActive")) {
-			 message = "Because of some irrelevant activity from you so admin temporary block your"
+			 message = "Because of some irrelevant activity from you admin temporarily block your"
 					+ " account for any queries contact admin admin@letsplay.com";
 			}else {
 				message = "admin unblock  your"
@@ -96,7 +96,7 @@ public class UserController {
 			}
 		} else {
 
-			System.out.println("not successfull");
+			System.out.println("not successful");
 			return "Your email is not found";
 		}
 	
@@ -145,7 +145,7 @@ public class UserController {
 				}
 			} else {
 
-				System.out.println("not successfull");
+				System.out.println("not successful");
 				return "Your email is not found";
 			}
 
