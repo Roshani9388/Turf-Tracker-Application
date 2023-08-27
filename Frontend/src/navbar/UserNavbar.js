@@ -50,7 +50,7 @@ const AdminNavBar = () => {
                   aria-expanded="false"
                 >
                   <a class="nav-link active" aria-current="page">
-                    View&Book
+                    View & Book
                   </a>
                 </li>
                 <div
@@ -67,20 +67,7 @@ const AdminNavBar = () => {
               </div>
             </li>
 
-            {/*  Code without Dropdown
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/vewground">
-                View Grounds
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/viewhall">
-                View Courts
-              </a>
-            </li>
-*/}
-
+           
             <li>
               <div class="dropdown nav-item ">
                 <li
@@ -108,38 +95,7 @@ const AdminNavBar = () => {
                 </div>
               </div>
             </li>
-
-            {/*           
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/viewbookings_user"
-              >
-                My Bookings
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/viewcourtbookings_user"
-              >
-                My CourtBookings
-              </a>
-            </li>
-*/}
-            {/* <li class="nav-item active">
-              <button
-                class="btn navbtn navBtnReg"
-                onclick={redirectlogin}
-                // href="\login"
-              >
-                Log Out
-              </button>{" "}
-            </li> */}
-          </ul>
+           </ul>
 
           <form class="d-flex">
             <button
@@ -153,26 +109,7 @@ const AdminNavBar = () => {
         </div>
       </nav>
 
-      {/* <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <button
-                class="btn btn-outline-success navBtnReg"
-                type="button"
-                // onClick={redirectreg}
-              >
-                Logout
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav> */}
+      
     </div>
   );
 };

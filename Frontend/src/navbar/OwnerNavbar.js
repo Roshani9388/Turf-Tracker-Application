@@ -60,27 +60,7 @@ const AdminNavBar = () => {
                 My Activities
               </a>
             </li>
-            {/* without dropdown            
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/viewbooking_owner"
-              >
-                View Bookings
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/viewcourtbooking_owner"
-              >
-                View CourtsBookings
-              </a>
-            </li>
-*/}
+            
             <li>
               <div class="dropdown nav-item ">
                 <li

@@ -159,7 +159,7 @@ public class GroundController {
 			MediaType.IMAGE_PNG_VALUE })
 	public ResponseEntity<?> downloadImage(@PathVariable String img) throws IOException {
 		System.out.println("in img download " + img);
-		String path="E:\\New folder\\ZIP\\BackEnd\\LetsPlay\\images\\"+img;
+		String path="C:\\Users\\Administrator\\Desktop\\Project\\Backend\\LetsPlay\\src\\main\\resources\\static\\image\\"+img;
 		byte[] imageContext=Files.readAllBytes(Paths.get(path));
 		return ResponseEntity.ok(imageContext);
 	}

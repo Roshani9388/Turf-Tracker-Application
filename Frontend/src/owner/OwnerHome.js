@@ -60,7 +60,7 @@ function OwnerHome() {
                 <h6>Court coordinating</h6>
                 <p>
                   Manage court vacancy in real time and reduce your operational
-                  overheads via uninterrupted online &amp; ofﬂine integration
+                  overheads via uninterrupted online & ofﬂine integration
                 </p>
               </div>
             </div>
@@ -105,7 +105,7 @@ function OwnerHome() {
                   data-aos="fade-down"
                   data-aos-duration="500"
                 />
-                <h6>Invoices &amp; billing integration</h6>
+                <h6>Invoices & billing integration</h6>
                 <p>
                   Bring out invoices and authentication receipts with printer
                   integration and multiple page-format support

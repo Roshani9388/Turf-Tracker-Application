@@ -33,7 +33,7 @@ function ViewBookingsAdmin() {
               <td>Ground Name</td>
               <td>Date</td>
               <td>Time Slot</td>
-              <td>Amount</td>
+              <td>Amount(in Rupees)</td>
               <td>Mobile</td>
             </tr>
           </thead>
@@ -46,7 +46,7 @@ function ViewBookingsAdmin() {
                     <td>{user.groundDetails.ground_name}</td>
                     <td>{user.date}</td>
                     <td>{user.timeSlots.time_slot}</td>
-                    <td>{user.amount}</td>
+                    <td>₹ {user.amount}</td>
                     <td>{user.user.mobile}</td>
                   </tr>
                 );

@@ -49,7 +49,7 @@ function ViewCourtBookingsAdmin(user) {
               <td>Hall Name</td>
               <td>Date</td>
               <td>Time Slot</td>
-              <td>Amount</td>
+              <td>Amount (in ₹)</td>
               <td>Mobile</td>
               <td>Action</td>
             </tr>
@@ -63,7 +63,7 @@ function ViewCourtBookingsAdmin(user) {
                     <td>{user.hallDetails.hallname}</td>
                     <td>{user.date}</td>
                     <td>{user.timeSlots.time_slot}</td>
-                    <td>{user.amount}</td>
+                    <td>₹ {user.amount}</td>
                     <td>{user.user.mobile}</td>
                     <td>
                       {

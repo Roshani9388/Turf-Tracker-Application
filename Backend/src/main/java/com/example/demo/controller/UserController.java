@@ -24,7 +24,7 @@ public class UserController {
 
 		userService.addUser(user);
 		System.out.println("user Added");
-
+		
 		return "added successfully";
 
 	}

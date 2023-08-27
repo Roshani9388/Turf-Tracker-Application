@@ -110,13 +110,13 @@ function AddGround() {
                   <div class="form-group col-sm-6 flex-column d-flex">
                     {" "}
                     <label class="form-control-label px-3">
-                      Enter ground rent
+                      Enter ground rent(in ₹)
                     </label>{" "}
                     <input
                       type="text"
                       id="mob"
                       name="amount"
-                      placeholder={getgroundDetail.amount}
+                      placeholder= {getgroundDetail.amount}
                     />{" "}
                   </div>
                 </div>
@@ -143,7 +143,7 @@ function AddGround() {
                     </label>{" "}
                     <br />
                     <label class="form-control-label px-3">
-                      9 Am to 12 Am{" "}
+                      09:00 AM to 12:00 PM{" "}
                     </label>
                     <input
                       type="checkbox"
@@ -152,10 +152,10 @@ function AddGround() {
                       placeholder=""
                     />{" "}
                     <label class="form-control-label px-3">
-                      12 Pm to 3 Pm{" "}
+                      12:00 PM to 03:00 PM{" "}
                     </label>
                     <input type="checkbox" name="afternoon" placeholder="" />{" "}
-                    <label class="form-control-label px-3">3 Pm to 6 Pm</label>
+                    <label class="form-control-label px-3">03:00 PM to 06:00 PM</label>
                     <input
                       type="checkbox"
                       id="mob"

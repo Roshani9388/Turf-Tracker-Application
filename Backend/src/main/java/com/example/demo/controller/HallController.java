@@ -157,7 +157,7 @@ public List<HallBooking> getGrounds(@RequestBody GroundsDetails hall){
 }
 
 
-@PostMapping("/deleteHallByHallId")
+@PostMapping("/deleteHallByHallId/{id}")
 public String deleteHalls(@RequestBody String hall_id){
 	
 	hallRepo.deleteById(hall_id);

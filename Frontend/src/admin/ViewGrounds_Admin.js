@@ -121,47 +121,14 @@ function ViewGround() {
               </div>
               <div class="col-12 row">
                 <div class="form-group">
-                  {/* <input
-                    type="date"
-                    class="form-control"
-                    id="dateOfBirth"
-                    name="date"
-                  /> */}
                 </div>
 
                 <p class="mt-3 h1 col-12">{item.ground_name}</p>
                 <p class="col-5 h5 mt-3">Address : {item.loction}</p>
                 <p class="col-4 h5 mt-3 ">City : {item.city}</p>
 
-                <p class="col-3 h5 mt-3">Rent per time slots:{item.amount}</p>
+                <p class="col-3 h5 mt-3">Rent per time slots: ₹ {item.amount}</p>
 
-                {/* {item.timeslots.map((time) => {
-                  return (
-                    <div class="col-12 mx-auto row">
-                      <input
-                        type="radio"
-                        class="col-1 ml-5 mt-1 "
-                        name="time"
-                        value={time.time_slotid}
-                        onClick={() => {
-                          timeSlot(time.slot_id);
-                        }}
-                      />
-                      {time.time_slot}
-                    </div>
-                  );
-                })} */}
-
-                {/* <button
-                  class="btn btn-outline-success navBtnLogin mt-3 col-12"
-                  type="button"
-                  // value={view}
-                  onClick={() => {
-                    Book(item.ground_id, item.amount, item.owner_id);
-                  }}
-                >
-                  Book Now
-                </button> */}
               </div>
             </div>
           </div>

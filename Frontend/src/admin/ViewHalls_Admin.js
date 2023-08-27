@@ -70,39 +70,30 @@ function ViewHall() {
     } else {
       sweetalert(
         "Error",
-        "This time slots is already booked by some one please select another",
+        "This time slots is already booked please select another",
         "error"
       );
     }
 
     console.log(check.data);
-    // const book = {
-    //   userId: localStorage.getItem("userid"),
-    //   groundId: groundid,
-    //   timeslotsId: localStorage.getItem("tslots"),
-    //   amount: amount,
-    //   //date: date,
-    // };
 
-    // const res = await axios.post("http://localhost:8081/saveBookings", book);
-    // sweetalert("success", "Added successfully", "success");
   };
 
-  //
+
 
   const getAvailableTime = async (date) => {
     setdate(date);
     alert(date + "  " + currentDate);
-    // const checktime = {
-    //   groundId: localStorage.getItem("groundid"),
-    //   date: currentDate,
-    // };
-    // const avalableTime = await axios.post(
-    //   "http://localhost:8081/findBookGround",
-    //   checktime
-    // );
-    // console.log(avalableTime.data);
-    // setBookSlotList(avalableTime.data);
+    const checktime = {
+      groundId: localStorage.getItem("groundid"),
+      date: currentDate,
+    };
+    const avalableTime = await axios.post(
+      "http://localhost:8081/findBookGround",
+      checktime
+    );
+    console.log(avalableTime.data);
+    setBookSlotList(avalableTime.data);
   };
 
   return (
@@ -121,47 +112,15 @@ function ViewHall() {
               </div>
               <div class="col-12 row">
                 <div class="form-group">
-                  {/* <input
-                    type="date"
-                    class="form-control"
-                    id="dateOfBirth"
-                    name="date"
-                  /> */}
+                  
                 </div>
 
                 <p class="mt-3 h1 col-12">{item.hallname}</p>
                 <p class="col-5 h5 mt-3">Address : {item.loction}</p>
                 <p class="col-4 h5 mt-3 ">City : {item.city}</p>
 
-                <p class="col-3 h5 mt-3">Rent per time slots:{item.amount}</p>
+                <p class="col-3 h5 mt-3">Rent per time slots: ₹ {item.amount}</p>
 
-                {/* {item.timeslots.map((time) => {
-                  return (
-                    <div class="col-12 mx-auto row">
-                      <input
-                        type="radio"
-                        class="col-1 ml-5 mt-1 "
-                        name="time"
-                        value={time.time_slotid}
-                        onClick={() => {
-                          timeSlot(time.slot_id);
-                        }}
-                      />
-                      {time.time_slot}
-                    </div>
-                  );
-                })} */}
-
-                {/* <button
-                  class="btn btn-outline-success navBtnLogin mt-3 col-12"
-                  type="button"
-                  // value={view}
-                  onClick={() => {
-                    Book(item.ground_id, item.amount, item.owner_id);
-                  }}
-                >
-                  Book Now
-                </button> */}
               </div>
             </div>
           </div>

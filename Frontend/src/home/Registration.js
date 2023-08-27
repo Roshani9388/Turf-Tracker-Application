@@ -175,6 +175,16 @@ function Registration() {
                     </div>
                     <div class="mb-3 rdo radio-buttons">
                       <h6 class="reg">Register as</h6>
+                      <input 
+                      className="rdo"
+                      type="radio"
+                      value="1"
+                      name="role"
+                      onChange={(e) =>{
+                        setRole(e.target.value);
+                      }}
+                      />{" "}
+                      Admin
                       <input
                         className="rdo"
                         type="radio"

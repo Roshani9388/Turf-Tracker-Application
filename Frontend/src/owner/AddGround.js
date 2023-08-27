@@ -151,19 +151,25 @@ function AddGround() {
                   />{" "}
                 </div>
                 <div class="form-group col-sm-6 flex-column d-flex">
-                  {" "}
-                  <label class="form-control-label px-3">
-                    Enter ground rent
-                  </label>{" "}
-                  <input
-                    type="text"
-                    id="mob"
-                    name="amount"
-                    // value=" "
-                    ref={rent}
-                    placeholder=""
-                  />{" "}
-                </div>
+  <label class="form-control-label px-3">
+    Enter ground rent (in ₹)
+  </label>
+  <div class="input-group"> {/* Wrap input in an input-group for better styling */}
+    {/* <div class="input-group-prepend">
+      <span class="input-group-text">&#8377;</span> {/* Rupees symbol 
+    </div> */}
+    <input
+      type="text"
+      id="mob"
+      name="amount"
+      // value=" "
+      ref={rent}
+      placeholder="₹ Amount"
+      class="form-control"
+    />
+  </div>
+</div>
+
               </div>
 
               <div class="row justify-content-between text-left">

@@ -89,8 +89,9 @@ function ViewHall() {
                 <p class="col-5 h5 mt-3">Address : {item.loction}</p>
                 <p class="col-4 h5 mt-3 ">City : {item.city}</p>
 
-                <p class="col-3 h5 mt-3">Rent per time slots:{item.amount}</p>
-
+                {/* <p class="col-3 h5 mt-3">Rent per time slots:{item.amount}</p> */}
+                <p class="col-3 h5 mt-3">Rent per time slots: &#8377;{item.amount}</p>
+ 
                 <h4 class="col-4 mt-2 mx-auto"> Time slots</h4>
                 <div class="col-10 mx-auto ml-5 row">
                   {item.timeslots.map((time) => {

@@ -90,7 +90,7 @@ public class UserServiceImpl implements UserService {
 	public boolean sendEmail(String subject, String message, String to)
 	{
 		boolean bool=false;
-		String from="anandkadam1995@gmail.com";
+		String from="Roshani@gmail.com";
 		String host="smtp.gmail.com";
 		
 		//get system property
@@ -109,7 +109,7 @@ public class UserServiceImpl implements UserService {
 		Session session=Session.getInstance(properties,new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("anandkadam1995@gmail.com","Pass@123");
+				return new PasswordAuthentication("Roshani@gmail.com","Pass@123");
 			}}
 			);
 		

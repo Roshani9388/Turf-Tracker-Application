@@ -39,34 +39,7 @@ function ViewGround() {
   };
 
   const deletes =  (groundid) => {
-    // console.log(">>>>" + groundid);
-    // const ground1 = { ground_id: groundid };
-    // const res = await axios.post(
-    //   "http://localhost:8081/findByGroundId",
-    //   ground1
-    // );
-    // console.log(res.data);
-
-    // const ground = {
-    //   ground_id: res.data.ground_id,
-    //   loction: res.data.loction,
-    //   amount: res.data.amount,
-    //   city: res.data.city,
-    //   ground_image: res.data.ground_image,
-    //   ground_name: res.data.ground_name,
-
-    //   hallname: res.data.hallname,
-
-    //   owner_id: res.data.owner_id,
-    //   sports_name: res.data.sports_name,
-    //   timeslots: {
-    //     ground_id: res.data.timeslots.ground_id,
-    //     slot_id: res.data.timeslots.slot_id,
-    //     status: res.data.timeslots.status,
-    //     time_slot: res.data.timeslots.time_slot,
-    //   },
-    // };
-    // const response = await 
+   
     axios.post(
       `http://localhost:8081/deleteGroundByGroundId/${groundid}`
     ).then(res=>{
@@ -105,13 +78,16 @@ function ViewGround() {
                   /> */}
                 </div>
 
-                <p class="mt-3 h1 col-12">{item.ground_name}</p>
-                <p class="col-5 h5 mt-3">Address : {item.loction}</p>
-                <p class="col-4 h5 mt-3 ">City : {item.city}</p>
+                <p class="mt-3  h1 col-12">{item.ground_name}</p>
+                {/* <p class="mt-3  h5 mt-3">Type :{item.type}</p> */}
+                <p class="col-5 h5 mt-3">Address :{item.loction}</p>
+                <p class="col-4 h5 mt-3">City :{item.city}</p>
 
-                <p class="col-3 h5 mt-3">Rent per time slots:{item.amount}</p>
-
-                <h4 class="col-4 mt-2 mx-auto"> Time slots</h4>
+                <p class="col-3 h5 mt-3">Rent per time slots:₹ {item.amount}</p>
+                {/* <p class="col-3 h5 mt-3">
+                  Rent per time slots: ₹ {item.amount}
+                </p>    */}
+                <h4 class="col-4 mt-2 mx-auto"> Time slots </h4>
                 <div class="col-10 mx-auto ml-5 row">
                   {item.timeslots.map((time) => {
                     return (

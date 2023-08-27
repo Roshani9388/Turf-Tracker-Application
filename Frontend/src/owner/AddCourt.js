@@ -40,8 +40,6 @@ function AddHall() {
     localStorage.setItem("role", null);
   };
   const [hallName, setHallName] = useState("");
-  // let hallName = React.createRef();
-
   let address = React.createRef();
   let city = React.createRef();
   let rent = React.createRef();
@@ -144,18 +142,18 @@ function AddHall() {
                   />{" "}
                 </div>
                 <div class="form-group col-sm-6 flex-column d-flex">
-                  {" "}
-                  <label class="form-control-label px-3">
-                    Enter Court rent
-                  </label>{" "}
-                  <input
-                    type="text"
-                    id="mob"
-                    name="amount"
-                    //value=""
-                    ref={rent}
-                    placeholder=""
-                  />{" "}
+                <label class="form-control-label px-3">
+                Enter Court rent (in ₹)
+                </label>
+                <input
+                type="text"
+                id="mob"
+                name="amount"
+                // value=""
+                ref={rent}
+                placeholder="₹ Amount"
+                class="form-control"
+                />
                 </div>
               </div>
 
@@ -178,7 +176,7 @@ function AddHall() {
                 <div class="form-group col-sm-12 flex-row d-flex">
                   {" "}
                   <label class="form-control-label px-3">
-                    TimeSlot<span class="text-danger"> *</span>
+                    TimeSlot<span class="text-danger"> </span>
                   </label>{" "}
                   <br />
                   <label class="form-control-label px-3">09:00 AM to 12:00 PM </label>

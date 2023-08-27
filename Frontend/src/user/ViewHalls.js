@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import sweetalert from "sweetalert";
-import swal from "sweetalert2";
-
-import DatePicker from "react-datepicker";
-import { TextField } from "@material-ui/core";
-import { Link } from "react-router-dom";
-import moment from "moment";
 import "./ViewGrounds.css";
 
 function ViewHall() {
@@ -71,7 +65,7 @@ function ViewHall() {
       };
 
       const res = await axios.post("http://localhost:8081/saveBookings", book);
-      sweetalert("success", "Your booking has been successfull", "success");
+      sweetalert("success", "Your booking has been successful", "success");
       // swal.fire("Good job!", "You clicked the button!", "success");
       window.location.href = "/viewbookings_user";
     } else {
@@ -97,7 +91,7 @@ function ViewHall() {
     // sweetalert("success", "Added successfully", "success");
   };
 
-  //
+  
 
   const getAvailableTime = async (date) => {
     setdate(date);
@@ -143,19 +137,13 @@ function ViewHall() {
               </div>
               <div class="col-12 row">
                 <div class="form-group">
-                  {/* <input
-                    type="date"
-                    class="form-control"
-                    id="dateOfBirth"
-                    name="date"
-                  /> */}
                 </div>
 
                 <p class="mt-3 h1 col-12">{item.hallname}</p>
                 <p class="col-5 h5 mt-3">Address : {item.loction}</p>
                 <p class="col-4 h5 mt-3 ">City : {item.city}</p>
                 <p class="col-4 h5 mt-3 ">Sport: {item.sports_name}</p>
-                <p class="col-7 h5 mt-3">Rent per time slots:{item.amount}</p>
+                <p class="col-7 h5 mt-3">Rent per time slots: ₹ {item.amount}</p>
 
                 <div className="col-12 manage">
                   <div class="date">

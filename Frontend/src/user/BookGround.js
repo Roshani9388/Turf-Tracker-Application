@@ -95,7 +95,7 @@ function BookGround() {
             <p class="col-5 h5 mt-3">Address : {groundList.loction}</p>
             <p class="col-4 h5 mt-3 ">City : {groundList.city}</p>
 
-            <p class="col-3 h5 mt-3">Rent per time slots:{groundList.amount}</p>
+            <p class="col-3 h5 mt-3">Rent per time slots:₹ {groundList.amount}</p>
 
             <input
               type="date"
@@ -162,7 +162,7 @@ function BookGround() {
 export default BookGround;
 
 function timeSlot(time) {
-  //alert(time);
+  sweetalert(time);
   localStorage.setItem("tslots", time);
   //const [timeslot, time] = useState("");
 }
